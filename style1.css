@@ -1,0 +1,11 @@
+.footer{
+    text-align: center;
+    color: #fff;
+    background-color: #303030;
+    padding: 30px;
+}
+@media  (min-width:480px) {
+    .footer{
+        width: 100%;
+    }
+}
