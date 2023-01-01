@@ -7,17 +7,23 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font awesome icon -->
   <script src="https://kit.fontawesome.com/6784d1998e.js" crossorigin="anonymous"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body>
   <!-- navbar  -->
   <header class="text-gray-200 body-font p-0 drop-shadow-2xl">
-    <div class="  flex flex-around">
-      <!-- <a class="flex title-font font-medium items-center text-gray-200 mb-4 md:mb-0"> -->
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg> -->
+    <div class="  flex flex-around">  
         <img class="h-32 w-32 mr-32 ml-52" src="images/TPI CPC TR 2 -03.png"  alt="">
-        <!-- <span class="ml-3 text-xl">Tailblocks</span> -->
         <nav class=" flex flex-wrap text-base justify-center mt-10">
             <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Home</a>
             <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Wings</a>
@@ -29,7 +35,6 @@
             <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Settings</a>
             <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Login</a>
         </nav>
-
         <div class="mt-6 mr-8 ">
             <p class="text-slate-600">Follow Us On</p>
             <i class=" fa-brands fa-facebook-f mr-2 text-slate-600 hover:text-sky-500"></i>
@@ -37,9 +42,6 @@
             <i class="fa-brands fa-youtube mr-2 text-slate-600 hover:text-orange-700"></i>
             <i class="fa-brands fa-linkedin mr-2 text-slate-600 hover:text-sky-500"></i>
         </div>
-      <!-- </a> -->
-      
-      
     </div>
   </header>
 </body>
