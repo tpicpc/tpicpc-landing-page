@@ -1,48 +1,77 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- tailwind link -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font awesome icon -->
   <script src="https://kit.fontawesome.com/6784d1998e.js" crossorigin="anonymous"></script>
+  <!-- Tailwind config here -->
   <script>
     tailwind.config = {
+      // content: [
+      //   "./pages/**/*.{js,ts,jsx,tsx}",
+      //   "./components/**/*.{js,ts,jsx,tsx}",
+      // ],
       theme: {
+        screens: {
+          sm: "375px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1440px",
+        },
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: "1rem",
+            lg: "3rem",
+          },
+        },
         extend: {
           colors: {
-            clifford: '#da373d',
-          }
-        }
-      }
-    }
+            primary: "#4a83c4",
+            secondary: "#667085",
+            cpcYellow: "#fbba31",
+            cpcRed: "#b32a1c",
+          },
+          // backgroundImage: {
+          //   'hero-img': "url('/Images/Container.svg')",
+          // }
+        },
+      },
+      plugins: [],
+    };
   </script>
 </head>
+
 <body>
   <!-- navbar  -->
   <header class="text-gray-200 body-font p-0 drop-shadow-2xl">
-    <div class="  flex flex-around">  
-        <img class="h-32 w-32 mr-32 ml-52" src="images/TPI CPC TR 2 -03.png"  alt="">
-        <nav class=" flex flex-wrap text-base justify-center mt-10">
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Home</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Wings</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Team</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Blog</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Event</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Verify Certificate</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Search</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Settings</a>
-            <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Login</a>
-        </nav>
-        <div class="mt-6 mr-8 ">
-            <p class="text-slate-600">Follow Us On</p>
-            <i class=" fa-brands fa-facebook-f mr-2 text-slate-600 hover:text-sky-500"></i>
-            <i class="fa-brands fa-instagram mr-2 text-slate-600 hover:text-orange-700"></i>
-            <i class="fa-brands fa-youtube mr-2 text-slate-600 hover:text-orange-700"></i>
-            <i class="fa-brands fa-linkedin mr-2 text-slate-600 hover:text-sky-500"></i>
-        </div>
+    <div class="flex flex-around">
+      <img class="h-32 w-32 mr-32 ml-52" src="images/tpicpclogo.png" alt="TPI CPC" />
+      <nav class="flex flex-wrap text-base justify-center mt-10">
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Home</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Wings</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Team</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Blog</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Event</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Verify
+          Certificate</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Search</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Settings</a>
+        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Login</a>
+      </nav>
+      <div class="mt-6 mr-8">
+        <p class="text-slate-600">Follow Us On</p>
+        <i class="fa-brands fa-facebook-f mr-2 text-slate-600 hover:text-sky-500"></i>
+        <i class="fa-brands fa-instagram mr-2 text-slate-600 hover:text-orange-700"></i>
+        <i class="fa-brands fa-youtube mr-2 text-slate-600 hover:text-orange-700"></i>
+        <i class="fa-brands fa-linkedin mr-2 text-slate-600 hover:text-sky-500"></i>
+      </div>
     </div>
   </header>
 </body>
+
 </html>
