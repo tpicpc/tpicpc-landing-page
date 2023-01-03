@@ -1,0 +1,13 @@
+
+
+#hero{
+    background:linear-gradient(rgba(0, 132, 255, 0.699),rgba(0, 132, 255, 0.699),rgba(255, 153, 0, 0.712),rgba(255, 153, 0, 0.712)), url(./images/hero-img.jpg)  no-repeat ;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    /* z-index: -1; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
