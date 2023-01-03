@@ -7,8 +7,9 @@
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font-awesome cdn -- =-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Ion icons -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- Tailwind config here -->
@@ -53,231 +54,315 @@
 </head>
 
 <body>
-    <header class="bg-white">
-        <!-- navbar start -->
-        <nav class="flex justify-between items-center w-[92%] mx-auto ">
-            <div>
-                <img class="w-20 cursor-pointer" src="images/tpicpclogo.png" alt="">
-            </div>
-
-            <div id="navLinks" class="md:static absolute md:min-h-fit bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 duration-500">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
-                    <li>
-                        <a class="hover:text-secondary font-medium" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary font-medium" href="#">Team</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary font-medium" href="#">Blogs</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary font-medium" href="#">Events</a>
-                    </li>
-                    <li>
-                        <a class="hover:text-secondary font-medium" href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <ion-icon name="logo-facebook" class="md:p-2 md:mt-3  p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
-                        <ion-icon name="logo-youtube" class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
-                        <ion-icon name="logo-instagram" class="md:p-2 p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
-                        <ion-icon name="logo-linkedin" class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex items-center gap-6">
-                <button class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Login</button>
-                <ion-icon onclick="menuIcons(this)" name="menu" class="text-3xl cursor-pointer md:hidden hover:text-secondary"></ion-icon>
-            </div>
-        </nav>
-    </header>
+    <!-- navbar  -->
 
 
 
-    <!-------------start => Hero section ----------------->
-
-    <section id="hero">
-        <div class="container">
-            <div class="py-10 xl:w-3/6 md:w-4/6 sm:w-5/6">
-                <h4 class="xl:text-4xl md:text-3xl sm:text-xl font-bold text-cpcYellow">Thakurgaon Polytechnic Institute</h4>
-                <h2 class="xl:text-6xl md:text-4xl sm:text-3xl my-4 font-bold ">Computer & Programming Club</h2>
-                <p class="my-6 xl:text-xl md:text-lg sm:text-sm ">TPI CPC is the most primitive and extensive club as well as the biggest club in Thakurgaon Polytechnic Institute. We work together to explore every field of Computer Science .</p>
-                <button class="mt-8 bg-primary py-3 px-6  rounded text-white">Read More</button>
-            </div>
-        </div>
-    </section>
-
-    <!-------------end => Hero section ----------------->
 
 
-    <!-------------start => Why join our comunity section ----------------->
-
-    <section id="why-join" class="container my-8">
-        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">Why Join CPC Computer Club?</h2>
-        <div class="why-join-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10 ">
-            <div class="item border border-primary border-2 py-8 px-2 rounded">
-                <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-            <div class="item border border-primary border-2 py-8 px-2 rounded">
-                <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-            <div class="item border border-primary border-2 py-8 px-2 rounded">
-                <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
-                <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-        </div>
-    </section>
-
-    <!-------------end => Why join our comunity section ----------------->
-
-
-    <!-------------start => Our team section ----------------->
-
-    <section id="our-team" class="container my-8">
-
-        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl ">Our Team </h2>
-
-        <div class="our-team-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10">
-
-            <div class="item text-center bg-cpcYellow rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+    <body>
+        <header class="bg-white">
+            <!-- navbar start -->
+            <nav class="flex justify-between items-center w-[92%] mx-auto ">
+                <div>
+                    <img class="w-20 cursor-pointer" src="images/tpicpclogo.png" alt="">
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-primary px-3 py-2 my-3 rounded bg-black text-white	">load more</button>
-            </div>
-            <div class="item text-center bg-primary rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+
+                <div id="navLinks"
+                    class="md:static absolute md:min-h-fit bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 duration-500">
+                    <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+                        <li>
+                            <a class="hover:text-secondary font-medium" href="#">Home</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary font-medium" href="#">Team</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary font-medium" href="#">Blogs</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary font-medium" href="#">Events</a>
+                        </li>
+                        <li>
+                            <a class="hover:text-secondary font-medium" href="#">Contact Us</a>
+                        </li>
+                        <li>
+                            <ion-icon name="logo-facebook"
+                                class="md:p-2 md:mt-3  p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
+                            <ion-icon name="logo-youtube"
+                                class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
+                            <ion-icon name="logo-instagram"
+                                class="md:p-2 p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
+                            <ion-icon name="logo-linkedin"
+                                class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
+                        </li>
+                    </ul>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load more</button>
-            </div>
-            <div class="item text-center bg-cpcYellow rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                <div class="flex items-center gap-6">
+                    <button class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Login</button>
+                    <ion-icon onclick="menuIcons(this)" name="menu"
+                        class="text-3xl cursor-pointer md:hidden hover:text-secondary"></ion-icon>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load more</button>
-            </div>
-            <div class="item text-center bg-primary rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
-                </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load more</button>
-            </div>
-            <div class="item text-center bg-cpcYellow rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
-                </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load more</button>
-            </div>
-            <div class="item text-center bg-primary rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
-                </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load more</button>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-------------end => Our team section ----------------->
+            </nav>
+        </header>
 
 
 
-    <!-------------start => About us section ----------------->
+        <!-------------start => Hero section ----------------->
 
-    <section id="about-us">
-        <div class="container grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 p-8">
-            <div class="col-2 pr-8">
-                <h2 class=" xl:text-left md:text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">ABOUT US</h2>
-                <p class="my-8 text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid! dolor sit amet consectetur adipisicing elit. Deleniti,
-                    sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil
-                    unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid! dolor sit amet consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo atque facere
-                    aliquid!
-                </p>
-                <button class="bg-cpcYellow py-3 px-6 rounded text-white text-lg">
-              learn more !
-            </button>
-            </div>
-            <div class="col-2 rounded">
-                <img class="rounded" src="./images/groupphoto-1536x965.jpg" alt="">
-            </div>
-        </div>
-    </section>
-    <!-------------end => about us section ----------------->
-
-
-    <!-------------start => Our blog section ----------------->
-    <section id="why-join" class="container my-10">
-        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">CPC Blog </h2>
-        <div class="why-join-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10 ">
-
-            <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
-                <i class="fa-solid fa-laptop-code text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">WEB DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-
-            <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
-                <i class="fa-brands fa-python text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">SOFTWARE DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-
-            <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
-                <i class="fa-solid fa-code text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">PROGRAMMING</h2>
-                <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-
-        </div>
-    </section>
-    <!-------------end => Our blog section ----------------->
-
-
-    <section id="contact" class="my-10">
-        <div class="container">
-            <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl py-8">Contact Our Team</h2>
-            <div class="row grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
-                <div class="border border-2 border-cpcYellow">
-                    <iframe class="rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22762.07897341723!2d88.4417938231245!3d26.040013866764134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4eb618da025ab%3A0x95cf23c7ca0cb9e3!2sThakurgaon%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1672728451809!5m2!1sen!2sbd"
-                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="">
-                    <form action="" class="border border-cpcYellow border-2 p-8">
-                        <span> Your Name : </span>
-                        <input class="border w-full my-4 py-2 px-2 " type="text" placeholder="Name">
-                        <span>Your Email :</span>
-                        <input class="border w-full my-4 py-2 px-2 " type="email" placeholder="Email">
-                        <span>Comment :</span>
-                        <textarea class="border w-full my-4 py-2 px-2 " placeholder="your comment" name="" id="" cols="30" rows="5"></textarea>
-                    </form>
+        <section id="hero">
+            <div class="container">
+                <div class="py-10 xl:w-3/6 md:w-4/6 sm:w-5/6">
+                    <h4 class="xl:text-4xl md:text-3xl sm:text-xl font-bold text-cpcYellow">Thakurgaon Polytechnic
+                        Institute</h4>
+                    <h2 class="xl:text-6xl md:text-4xl sm:text-3xl my-4 font-bold ">Computer & Programming Club</h2>
+                    <p class="my-6 xl:text-xl md:text-lg sm:text-sm ">TPI CPC is the most primitive and extensive club
+                        as well as the biggest club in Thakurgaon Polytechnic Institute. We work together to explore
+                        every field of Computer Science .</p>
+                    <button class="mt-8 bg-primary py-3 px-6  rounded text-white">Read More</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <!-------------end => Hero section ----------------->
+
+
+        <!-------------start => Why join our comunity section ----------------->
+
+        <section id="why-join" class="container my-8">
+            <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">Why Join CPC Computer Club?</h2>
+            <div class="why-join-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10 ">
+                <div class="item border border-primary border-2 py-8 px-2 rounded">
+                    <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
+                    <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
+                    <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero
+                        necessitatibus totam?</p>
+                </div>
+                <div class="item border border-primary border-2 py-8 px-2 rounded">
+                    <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
+                    <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
+                    <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero
+                        necessitatibus totam?</p>
+                </div>
+                <div class="item border border-primary border-2 py-8 px-2 rounded">
+                    <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
+                    <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
+                    <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero
+                        necessitatibus totam?</p>
+                </div>
+            </div>
+        </section>
+
+        <!-------------end => Why join our comunity section ----------------->
+
+
+        <!-------------start => Our team section ----------------->
+
+        <section id="our-team" class="container my-8">
+
+            <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl ">Our Team </h2>
+
+            <div class="our-team-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10">
+
+                <div class="item text-center bg-cpcYellow rounded">
+                    <div class="flex justify-center text-center p-8">
+                        <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                    </div>
+                    <h2 class="text-2xl text-white ">Web devloper team</h2>
+                    <button class=" border border-primary px-3 py-2 my-3 rounded bg-black text-white	">load
+                        more</button>
+                </div>
+                <div class="item text-center bg-primary rounded">
+                    <div class="flex justify-center text-center p-8">
+                        <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                    </div>
+                    <h2 class="text-2xl text-white ">Web devloper team</h2>
+                    <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
+                        more</button>
+                </div>
+                <div class="item text-center bg-cpcYellow rounded">
+                    <div class="flex justify-center text-center p-8">
+                        <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                    </div>
+                    <h2 class="text-2xl text-white ">Web devloper team</h2>
+                    <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
+                        more</button>
+                </div>
+                <div class="item text-center bg-primary rounded">
+                    <div class="flex justify-center text-center p-8">
+                        <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                    </div>
+                    <h2 class="text-2xl text-white ">Web devloper team</h2>
+                    <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
+                        more</button>
+                </div>
+                <div class="item text-center bg-cpcYellow rounded">
+                    <div class="flex justify-center text-center p-8">
+                        <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                    </div>
+                    <h2 class="text-2xl text-white ">Web devloper team</h2>
+                    <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
+                        more</button>
+                </div>
+                <div class="item text-center bg-primary rounded">
+                    <div class="flex justify-center text-center p-8">
+                        <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                    </div>
+                    <h2 class="text-2xl text-white ">Web devloper team</h2>
+                    <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
+                        more</button>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-------------end => Our team section ----------------->
 
 
 
-    <script>
-        const navLinks = document.getElementById('navLinks')
+        <!-------------start => About us section ----------------->
 
-        function menuIcons(e) {
-            e.name = e.name === 'menu' ? 'close' : 'menu';
-            navLinks.classList.toggle('top-[9%]');
-        }
-    </script>
-</body>
+        <section id="about-us">
+            <div class="container grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 p-8">
+                <div class="col-2 pr-8">
+                    <h2 class=" xl:text-left md:text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">ABOUT US</h2>
+                    <p class="my-8 text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sit
+                        laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo
+                        atque facere aliquid! dolor sit amet consectetur adipisicing elit. Deleniti,
+                        sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo
+                        atque facere aliquid!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sit
+                        laborum et, fuga molestiae doloremque nihil
+                        unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid! dolor sit amet
+                        consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil unde
+                        cupiditate, repudiandae quis assumenda nemo atque facere
+                        aliquid!
+                    </p>
+                    <button class="bg-cpcYellow py-3 px-6 rounded text-white text-lg">
+                        learn more !
+                    </button>
+                </div>
+                <div class="col-2 rounded">
+                    <img class="rounded" src="./images/groupphoto-1536x965.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-------------end => about us section ----------------->
+
+
+        <!-------------start => Our blog section ----------------->
+        <section id="why-join" class="container my-10">
+            <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">CPC Blog </h2>
+            <div class="why-join-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10 ">
+
+                <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
+                    <i class="fa-solid fa-laptop-code text-primary xl:text-5xl md:text-3xl sm:text-xl"
+                        aria-hidden="true"></i>
+                    <h2 class="mt-3 font-bold text-3xl">WEB DEVELOPERS</h2>
+                    <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero
+                        necessitatibus totam?</p>
+                </div>
+
+                <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
+                    <i class="fa-brands fa-python text-primary xl:text-5xl md:text-3xl sm:text-xl"
+                        aria-hidden="true"></i>
+                    <h2 class="mt-3 font-bold text-3xl">SOFTWARE DEVELOPERS</h2>
+                    <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero
+                        necessitatibus totam?</p>
+                </div>
+
+                <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
+                    <i class="fa-solid fa-code text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
+                    <h2 class="mt-3 font-bold text-3xl">PROGRAMMING</h2>
+                    <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero
+                        necessitatibus totam?</p>
+                </div>
+
+            </div>
+        </section>
+        <!-------------end => Our blog section ----------------->
+
+
+        <section id="contact" class="my-10">
+            <div class="container">
+                <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl py-8">Contact Our Team</h2>
+                <div class="row grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
+                    <div class="border border-2 border-cpcYellow">
+                        <iframe class="rounded"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22762.07897341723!2d88.4417938231245!3d26.040013866764134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e4eb618da025ab%3A0x95cf23c7ca0cb9e3!2sThakurgaon%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1672728451809!5m2!1sen!2sbd"
+                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="">
+                        <form action="" class="border border-cpcYellow border-2 p-8">
+                            <span> Your Name : </span>
+                            <input class="border w-full my-4 py-2 px-2 " type="text" placeholder="Name">
+                            <span>Your Email :</span>
+                            <input class="border w-full my-4 py-2 px-2 " type="email" placeholder="Email">
+                            <span>Comment :</span>
+                            <textarea class="border w-full my-4 py-2 px-2 " placeholder="your comment" name="" id=""
+                                cols="30" rows="5"></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="flex gap-12 my-12">
+                <div>
+                    <p class="shadow-lg shadow-blue-500/100 "><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14339.340919252532!2d88.4429866!3d26.0389467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95cf23c7ca0cb9e3!2sThakurgaon%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1672680586788!5m2!1sen!2sbd"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+                </div>
+                <div class="text-slate-700 ">
+                    <h1 class="text-3xl font-bold pb-4">GET IN TOUCH</h1>
+                    <p><span class="text-2xl">Location</span><br>
+                        <span>Thakurgaon Polytechnic Institute</span><br>
+                        <span>Gobindra Nogor, Thakurgaon Road , Thakurgaon</span><br>
+                    </p> <br>
+
+                    <p class="text-2xl ">Contact <br>
+                        Email:infosahinur@gmail.com</p><br>
+                    <div class="text-2xl text-blue-500">
+                        <i class="fa-solid fa-envelope  "></i>
+                        Send us a message
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="bg-cyan-300 ">
+
+                <img class="" src="images/favicon.ico" alt="">
+                <p class="text-center py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Veritatis
+                    eius ipsum molestiae fugit amet, corrupti <br> voluptas maxime doloribus eos dicta.</p>
+                <div class="text-2xl text-center py-4">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            <p class="text-center py-8 bg-slate-800 text-slate-200"> copyright &copy;TPI Computer Club</p>
+        </footer>
+
+
+        <script>
+            const navLinks = document.getElementById('navLinks')
+
+            function menuIcons(e) {
+                e.name = e.name === 'menu' ? 'close' : 'menu';
+                navLinks.classList.toggle('top-[9%]');
+            }
+        </script>
+    </body>
+
 
 </html>
