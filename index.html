@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- tailwind link -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font awesome icon -->
-  <script src="https://kit.fontawesome.com/6784d1998e.js" crossorigin="anonymous"></script>
+  <!-- Ion icons -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <!-- Tailwind config here -->
   <script>
     tailwind.config = {
@@ -46,32 +46,52 @@
   </script>
 </head>
 
-<body>
-  <!-- navbar  -->
-  <header class="text-gray-200 body-font p-0 drop-shadow-2xl container">
-    <div class="flex flex-around">
-      <img class="h-32 w-32 mr-32 ml-52" src="images/tpicpclogo.png" alt="TPI CPC" />
-      <nav class="flex flex-wrap text-base justify-center mt-10">
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Home</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Wings</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Team</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Blog</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Event</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Verify
-          Certificate</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Search</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Settings</a>
-        <a class="mr-8 text-slate-600 font-bold hover:text-orange-500 transition ease-in-out duration-500">Login</a>
+<body class="bg-primary">
+  <header class="bg-white">
+    <!-- navbar start -->
+      <nav class="flex justify-between items-center w-[92%] mx-auto ">
+        <div>
+          <img class="w-20 cursor-pointer" src="images/tpicpclogo.png" alt="">
+        </div>
+
+        <div id="navLinks" class="md:static absolute md:min-h-fit bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 duration-500">
+          <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+            <li>
+              <a class="hover:text-secondary font-medium" href="#">Home</a>
+            </li>
+            <li>
+              <a class="hover:text-secondary font-medium" href="#">Team</a>
+            </li>
+            <li>
+              <a class="hover:text-secondary font-medium" href="#">Blogs</a>
+            </li>
+            <li>
+              <a class="hover:text-secondary font-medium" href="#">Events</a>
+            </li>
+            <li>
+              <a class="hover:text-secondary font-medium" href="#">Contact Us</a>
+            </li>
+            <li>
+              <ion-icon name="logo-facebook" class="md:p-2 md:mt-3  p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
+              <ion-icon name="logo-youtube" class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
+              <ion-icon name="logo-instagram" class="md:p-2 p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
+              <ion-icon name="logo-linkedin" class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
+            </li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-6">
+          <button class="bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Login</button>
+          <ion-icon onclick="menuIcons(this)" name="menu" class="text-3xl cursor-pointer md:hidden hover:text-secondary"></ion-icon>
+        </div>
       </nav>
-      <div class="mt-6 mr-8">
-        <p class="text-slate-600">Follow Us</p>
-        <i class="fa-brands fa-facebook-f mr-2 text-slate-600 hover:text-sky-500"></i>
-        <i class="fa-brands fa-instagram mr-2 text-slate-600 hover:text-orange-700"></i>
-        <i class="fa-brands fa-youtube mr-2 text-slate-600 hover:text-orange-700"></i>
-        <i class="fa-brands fa-linkedin mr-2 text-slate-600 hover:text-sky-500"></i>
-      </div>
-    </div>
   </header>
+  <script>
+    const navLinks = document.getElementById('navLinks')
+      function menuIcons(e){
+          e.name = e.name === 'menu'? 'close' : 'menu';
+          navLinks.classList.toggle('top-[9%]');
+      }
+  </script>
 </body>
 
 </html>
