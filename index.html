@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TPI - Computer Programming Club</title>
     <!-- tailwind link -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- font-awesome cdn -- =-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Ion icons -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- Tailwind config here -->
@@ -55,44 +57,53 @@
 <body>
     <header class="bg-white">
         <!-- navbar start -->
-            <nav class="container bg-white flex justify-between items-center">
-              <div>
+        <nav class="container bg-white flex justify-between items-center">
+            <div>
                 <img class="w-20 cursor-pointer mt-3" src="images/tpicpclogo.png" alt="">
-              </div>
-      
-              <div  id="nav-links" class="md:static absolute bg-white left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+            </div>
+
+            <div id="nav-links"
+                class="md:static absolute bg-white left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
-                  <li>
-                    <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Home</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Team</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Blogs</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Events</a>
-                  </li>
-                  <li>
-                    <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Contact Us</a>
-                  </li>
-                  <li class="md:hidden lg:flex">
-                    <a target="_blank" href="https://github.com/tpicpc"><ion-icon name="logo-github" class="hover:text-secondary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
-                    <a target="_blank" href="https://www.facebook.com/tpicpc"><ion-icon name="logo-facebook" class="hover:text-primary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
-                    <a target="_blank" href="https://www.youtube.com/@tpicpc"><ion-icon name="logo-youtube" class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2 "></ion-icon></a>
-                    <a target="_blank" href="https://www.instagram.com/tpicpc"><ion-icon name="logo-instagram" class="hover:text-primary cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
-                    <a target="_blank" href="https://www.linkedin.com/company/tpicpc/"><ion-icon name="logo-linkedin" class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
-                  </li>
+                    <li>
+                        <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Team</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Blogs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Events</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary hover:underline decoration-2 font-bold" href="#">Contact Us</a>
+                    </li>
+                    <li class="md:hidden lg:flex">
+                        <a target="_blank" href="https://github.com/tpicpc"><ion-icon name="logo-github"
+                                class="hover:text-secondary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.facebook.com/tpicpc"><ion-icon name="logo-facebook"
+                                class="hover:text-primary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.youtube.com/@tpicpc"><ion-icon name="logo-youtube"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/tpicpc"><ion-icon name="logo-instagram"
+                                class="hover:text-primary cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/tpicpc/"><ion-icon
+                                name="logo-linkedin"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                    </li>
                 </ul>
-                
-              </div>
-              <div class="flex items-center gap-6">
-                <button class="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Register</button>
-                <ion-icon onclick="menuIcons(this)" name="menu" class="text-3xl cursor-pointer md:hidden hover:text-primary"></ion-icon>
-              </div>
-            </nav>
-      </header>
+
+            </div>
+            <div class="flex items-center gap-6">
+                <button
+                    class="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Register</button>
+                <ion-icon onclick="menuIcons(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden hover:text-primary"></ion-icon>
+            </div>
+        </nav>
+    </header>
 
 
     <!-------------start => Hero section ----------------->
@@ -102,8 +113,10 @@
             <div class="py-10 xl:w-3/6 md:w-4/6 sm:w-5/6">
                 <h4 class="xl:text-4xl md:text-3xl sm:text-xl font-bold text-cpcYellow">Thakurgaon Polytechnic Institute
                 </h4>
-                <h2 class="xl:text-6xl md:text-4xl sm:text-3xl my-4 font-bold ">Computer & Programming Club</h2>
-                <p class="my-6 xl:text-xl md:text-lg sm:text-sm ">TPI CPC is the most primitive and extensive club as well as the biggest club in Thakurgaon Polytechnic Institute. We work together to explore every field of Computer Science .</p>
+                <h2 class="xl:text-6xl md:text-4xl sm:text-3xl my-4 font-bold ">Computer Programming Club</h2>
+                <p class="my-6 xl:text-xl md:text-lg sm:text-sm ">TPI CPC is the most primitive and extensive club as
+                    well as the biggest club in Thakurgaon Polytechnic Institute. We work together to explore every
+                    field of Computer Science .</p>
                 <button class="mt-8 bg-primary py-3 px-6  rounded text-white">Read More</button>
             </div>
         </div>
@@ -115,22 +128,32 @@
     <!-------------start => Why join our comunity section ----------------->
 
     <section id="why-join" class="container my-8">
-        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">Why Join CPC Computer Club?</h2>
+        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">Why Join TPI CPC ?</h2>
+
         <div class="why-join-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10 ">
             <div class="item border border-primary border-2 py-8 px-2 rounded">
                 <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
+                <h2 class="mt-3 font-bold text-3xl">Professional Development</h2>
+                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">As a member of the Computer Programming Club,
+                    you'll have the opportunity to attend workshops, lectures, and other events that can help you
+                    develop your skills and knowledge in programming and technology. This can be particularly valuable
+                    for students who are looking to pursue a career in the tech industry.</p>
             </div>
             <div class="item border border-primary border-2 py-8 px-2 rounded">
                 <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
+                <h2 class="mt-3 font-bold text-3xl">Networking Opportunities</h2>
+                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Joining the Computer Programming Club allows
+                    you to connect with other students who share your interests in programming and technology. This can
+                    provide you with the chance to collaborate on projects, exchange ideas, and learn from one another.
+                </p>
             </div>
             <div class="item border border-primary border-2 py-8 px-2 rounded">
                 <i class="fa fa-users text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">FOR DEVELOPERS</h2>
-                <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
+                <h2 class="mt-3 font-bold text-3xl">Fun and Engaging Activities</h2>
+                <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm"> The Computer Programming Club often hosts
+                    events and activities that are both educational and enjoyable. This can include hackathons, coding
+                    competitions, guest speakers, and more. By joining the club, you'll have the chance to participate
+                    in these exciting and engaging events.</p>
             </div>
         </div>
     </section>
@@ -140,63 +163,116 @@
 
     <!-------------start => Our team section ----------------->
 
-    <section id="our-team" class="container my-8">
-
-        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl ">Our Team </h2>
-
-        <div class="our-team-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10">
-
-            <div class="item text-center bg-cpcYellow rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
-                </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-primary px-3 py-2 my-3 rounded bg-black text-white	">load
-                    more</button>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Team</h1>
+                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn
+                    asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them.
+                </p>
             </div>
-            <div class="item text-center bg-primary rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+            <div class="flex flex-wrap -m-2">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/80x80">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Holden Caulfield</h2>
+                            <p class="text-gray-500">UI Designer</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
-                    more</button>
-            </div>
-            <div class="item text-center bg-cpcYellow rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/84x84">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Henry Letham</h2>
+                            <p class="text-gray-500">CTO</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
-                    more</button>
-            </div>
-            <div class="item text-center bg-primary rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/88x88">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Oskar Blinde</h2>
+                            <p class="text-gray-500">Founder</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
-                    more</button>
-            </div>
-            <div class="item text-center bg-cpcYellow rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/90x90">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">John Doe</h2>
+                            <p class="text-gray-500">DevOps</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
-                    more</button>
-            </div>
-            <div class="item text-center bg-primary rounded">
-                <div class="flex justify-center text-center p-8">
-                    <img class="rounded-full h-32 " src="./images/n.jpg" alt="">
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/94x94">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Martin Eden</h2>
+                            <p class="text-gray-500">Software Engineer</p>
+                        </div>
+                    </div>
                 </div>
-                <h2 class="text-2xl text-white ">Web devloper team</h2>
-                <button class=" border border-teal-600 px-3 py-2 my-3 rounded bg-black text-white	">load
-                    more</button>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/98x98">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Boris Kitua</h2>
+                            <p class="text-gray-500">UX Researcher</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/100x90">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Atticus Finch</h2>
+                            <p class="text-gray-500">QA Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/104x94">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Alper Kamu</h2>
+                            <p class="text-gray-500">System</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                    <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+                        <img alt="team"
+                            class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                            src="https://dummyimage.com/108x98">
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 title-font font-medium">Rodrigo Monchi</h2>
+                            <p class="text-gray-500">Product Manager</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
-
     </section>
 
     <!-------------end => Our team section ----------------->
@@ -208,11 +284,28 @@
     <section id="about-us">
         <div class="container grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4 p-8">
             <div class="col-2 pr-8">
-                <h2 class=" xl:text-left md:text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">ABOUT US</h2>
-                <p class="my-8 text-primary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid! dolor sit amet consectetur adipisicing elit. Deleniti,
-                    sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid!Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil
-                    unde cupiditate, repudiandae quis assumenda nemo atque facere aliquid! dolor sit amet consectetur adipisicing elit. Deleniti, sit laborum et, fuga molestiae doloremque nihil unde cupiditate, repudiandae quis assumenda nemo atque facere
-                    aliquid!
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">About Us</h1>
+                <p class="my-8 text-primary">
+                    Welcome to the TPI Computer Programming Club! We are a group of students who are passionate about
+                    technology and programming. Our goal is to provide a supportive and welcoming environment for
+                    students to explore their interests in these fields and develop their skills and knowledge.
+                    <br>
+                    <br>
+                    As a member of the club, you'll have the opportunity to attend workshops, lectures, and other events
+                    that can help you stay up-to-date with the latest technology and trends in the industry. You'll also
+                    have the chance to connect with other students, professionals, and industry leaders through
+                    networking and collaboration opportunities.
+                    <br>
+                    <br>
+                    In addition to educational and professional development events, the TPI Computer Programming Club
+                    also hosts fun and engaging activities such as hackathons, coding competitions, and guest speakers.
+                    We believe that learning should be enjoyable and strive to create a positive and dynamic atmosphere
+                    for our members.
+                    <br>
+                    <br>
+                    Whether you're just starting out in programming or have advanced skills, the TPI Computer
+                    Programming Club has something for everyone. We hope you'll join us and become a part of our
+                    community of tech-savvy students.
                 </p>
                 <button class="bg-cpcYellow py-3 px-6 rounded text-white text-lg">
                     learn more !
@@ -228,94 +321,241 @@
 
     <!-------------start => Our blog section ----------------->
     <section id="why-join" class="container my-10">
-        <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl">CPC Blog </h2>
-        <div class="why-join-items grid xl:grid-cols-3 gap-4 md:grid-cols-2 sm:grid-cols-1 text-center my-10 ">
-
-            <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
-                <i class="fa-solid fa-laptop-code text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">WEB DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
+        <h1 class="text-center  sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Our Blog</h1>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/720x400" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Catalyzer</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>1.2K
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>6
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/721x401" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The 400 Blows</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap">
+                                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>1.2K
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>6
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                            <img class="lg:h-48 md:h-36 w-full object-cover object-center"
+                                src="https://dummyimage.com/722x402" alt="blog">
+                            <div class="p-6">
+                                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">CATEGORY
+                                </h2>
+                                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Shooting Stars</h1>
+                                <p class="leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
+                                    jianbing microdosing tousled waistcoat.</p>
+                                <div class="flex items-center flex-wrap ">
+                                    <a class="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">Learn More
+                                        <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor"
+                                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                            <path d="M5 12h14"></path>
+                                            <path d="M12 5l7 7-7 7"></path>
+                                        </svg>
+                                    </a>
+                                    <span
+                                        class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>1.2K
+                                    </span>
+                                    <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+                                        <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none"
+                                            stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                                            <path
+                                                d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z">
+                                            </path>
+                                        </svg>6
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
-                <i class="fa-brands fa-python text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">SOFTWARE DEVELOPERS</h2>
-                <p class="text-inherit mt-6 text-lg	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-
-            <div class="item border border-cpcYellow border-2 py-8 px-2 rounded">
-                <i class="fa-solid fa-code text-primary xl:text-5xl md:text-3xl sm:text-xl" aria-hidden="true"></i>
-                <h2 class="mt-3 font-bold text-3xl">PROGRAMMING</h2>
-                <p class="text-inherit mt-6 xl:text-xl	md:text-xl sm:text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, totam? Porro ipsum impedit distinctio veritatis atque enim libero necessitatibus totam?</p>
-            </div>
-
-        </div>
     </section>
     <!-------------end => Our blog section ----------------->
 
 
-    <section id="contact" class="my-10">
+    <section class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div
+                class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0"
+                    marginwidth="0" scrolling="no"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57355.684973115014!2d88.42419007922362!3d26.042378723826584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95cf23c7ca0cb9e3!2sThakurgaon%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1673015605402!5m2!1sen!2sbd"
+                    style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                    <div class="lg:w-1/2 px-6">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                        <p class="mt-1">Gobindra Nogor, Thakurgaon Road , Thakurgaon</p>
+                    </div>
+                    <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                        <a class="text-indigo-500 leading-relaxed">tpicpc@email.com</a>
+                        <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                        <p class="leading-relaxed">+8801751379009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Feedback</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion
+                    axe</p>
+                <div class="relative mb-4">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                    <input type="text" id="name" name="name"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                    <textarea id="message" name="message"
+                        class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button
+                    class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+                <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral
+                    artisan.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cyan-300 ">
         <div class="container">
-            <h2 class="text-center xl:text-5xl font-bold md:text-3xl sm:text-xl py-8">Contact Our Team</h2>
-            <div class="row grid xl:grid-cols-2 md:grid-cols-1 sm:grid-cols-1 gap-4">
-                <div class="border border-2 border-cpcYellow">
-                    <img src="./images/contact-img.svg" alt="">
-
-                </div>
-                <div class="">
-                    <form action="" class="border border-cpcYellow border-2 p-8">
-                        <span> Your Name : </span>
-                        <input class="border w-full my-4 py-2 px-2 " type="text" placeholder="Name">
-                        <span>Your Email :</span>
-                        <input class="border w-full my-4 py-2 px-2 " type="email" placeholder="Email">
-                        <span>Comment :</span>
-                        <textarea class="border w-full my-4 py-2 px-2 " placeholder="your comment" name="" id="" cols="30" rows="5"></textarea>
-                        <button class="bg-cpcYellow py-3 px-6 rounded text-white text-lg">Submite</button>
-
-                    </form>
-                </div>
+            <div class="flex items-center justify-center">
+                <img class="w-24 " src="images/tpicpclogo.png" alt="">
+            </div>
+            <p class="text-center py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Veritatis
+                eius ipsum molestiae fugit amet, corrupti <br> voluptas maxime doloribus eos dicta.</p>
+            <div class="text-2xl text-center py-8">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
-    </section>
-    <section class="container">
-        <div class="md:flex gap-12 my-12">
-            
-               <div class="shadow-lg shadow-blue-500/100 ">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57355.684973115014!2d88.42419007922362!3d26.042378723826584!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x95cf23c7ca0cb9e3!2sThakurgaon%20Polytechnic%20Institute!5e0!3m2!1sen!2sbd!4v1673015605402!5m2!1sen!2sbd"width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-            
-            <div class="text-slate-700 pt-4 ">
-                <h1 class="text-3xl font-bold pb-4">GET IN TOUCH</h1>
-                <p><span class="text-2xl">Location</span><br>
-                    <span>Thakurgaon Polytechnic Institute</span><br>
-                    <span>Gobindra Nogor, Thakurgaon Road , Thakurgaon</span><br>
-                </p> <br>
+    </footer>
 
-                <p class="text-2xl ">Contact <br> Email:infosahinur@gmail.com
-                </p><br>
-                <div class="text-2xl text-blue-500">
-                    <i class="fa-solid fa-envelope  "></i> Send us a message
-                </div>
-            </div>
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img class="w-20 cursor-pointer " src="images/tpicpclogo.png" alt="">
+                <span class="ml-3 text-xl"></span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2023 TPICPC —
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@knyttneve</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
         </div>
-    </section>
-  
-        <footer class="bg-cyan-300 ">
-            <div class="container" >
-                <div class="flex items-center justify-center">
-                    <img class="w-24 " src="images/tpicpclogo.png" alt="">
-                </div>
-                <p class="text-center py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br> Veritatis
-                    eius ipsum molestiae fugit amet, corrupti <br> voluptas maxime doloribus eos dicta.</p>
-                <div class="text-2xl text-center py-8">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <p class="text-center py-8 bg-slate-800 text-slate-200"> copyright &copy;TPI Computer Club</p>
-        </footer>
-
+    </footer>
 
     <script>
         // const navLinks = document.getElementById('nav-links');
