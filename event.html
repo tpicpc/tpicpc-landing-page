@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events | TPI - Computer Programming Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Join TPI - Computer Programming Club to learn and explore the world of coding. Our experienced instructors will guide you through the fundamentals of programming languages such as Java, Python, and C++. Whether you're a beginner looking to get started or a seasoned programmer looking to expand your skillset, our club has something for everyone. With hands-on projects, hackathons, and workshops, you'll have the opportunity to put your skills to the test and develop your knowledge in a collaborative and supportive environment. Join us today and take your programming skills to the next level!">
+        <meta name="keywords"
+        content="TPI,TPICPC,Computer Programming Club,Programming Club,Programming,Java,Python,C++,Coding,Learn,Explore,Instructors,Workshops,Hackathons,Projects,Hands-on,Skills,Knowledge,Supportive Environment,Join,Next Level">
+    <meta name="author" content="TPI - Computer Programming Club">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+        tailwind.config = {
+            // content: [
+            //   "./pages/**/*.{js,ts,jsx,tsx}",
+            //   "./components/**/*.{js,ts,jsx,tsx}",
+            // ],
+            theme: {
+                screens: {
+                    sm: "375px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1440px",
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: "1rem",
+                        lg: "3rem",
+                    },
+                },
+                extend: {
+                    colors: {
+                        primary: "#4a83c4",
+                        secondary: "#667085",
+                        cpcYellow: "#fbba31",
+                        cpcRed: "#b32a1c",
+                    },
+                    // backgroundImage: {
+                    //   'hero-img': "url('/Images/Container.svg')",
+                    // }
+                },
+            },
+            plugins: [],
+        };
+    </script>
+</head>
+<body>
+    <header class="bg-white">
+        <!-- navbar start -->
+        <nav class="container bg-white flex justify-between items-center">
+            <a href="index.html">
+                <img class="w-20 cursor-pointer mt-3" src="images/tpicpclogo.png" alt="">
+            </a>
+
+            <div id="nav-links"
+                class="md:static absolute bg-white left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary decoration-2 font-bold" href="#">Team</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="blogs.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="event.html">Events</a>
+                    </li>
+                    <li class="md:hidden lg:flex">
+                        <a target="_blank" href="https://github.com/tpicpc"><ion-icon name="logo-github"
+                                class="hover:text-secondary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.facebook.com/tpicpc"><ion-icon name="logo-facebook"
+                                class="hover:text-primary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.youtube.com/@tpicpc"><ion-icon name="logo-youtube"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/tpicpc"><ion-icon name="logo-instagram"
+                                class="hover:text-primary cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/tpicpc/"><ion-icon
+                                name="logo-linkedin"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="https://forms.gle/eYDGgffwRXBK8SJA7" target="_blank"
+                    class="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Join Now</a>
+                <ion-icon onclick="menuIcons(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden hover:text-primary"></ion-icon>
+            </div>
+        </nav>
+    </header>
+    <section class="bg-gradient-to-r from-cyan-500 to-blue-500 h-64">
+        <div class="container">
+            <h2 class="flex items-center justify-center pt-24 font-bold text-6xl italic text-orange-400">Upcoming Events</h2>
+        </div>
+    </section>
+    <section class="container my-12">
+        <h2 class="flex items-center justify-center font-medium text-3xl pt-8 text-gray-800 mb-8">Recent Events</h2>
+        <div class="grid grid-rows-3 gap-6">
+          <div class="lg:flex sm:block gap-28  bg-gradient-to-r from-cyan-500 to-blue-500 mb-12">
+           <div class=" p-12">
+            <img src="https://dummyimage.com/300x200" alt="">
+           </div>
+           <div class="lg:p-8 sm:px-8 text-white">
+            <div  class="sm:pt-4">
+                <h2 class="px-2 pb-2">TPI CPC Solo Fast Programming Contest - 01</h2>
+                <hr>
+                <div class="flex gap-24 p-2 ">
+                    <p>Date</p> <p>07-01-2023</p>
+                </div>
+                <hr>
+                <div class="flex gap-24 p-2">
+                    <p>Time</p><p>8:00PM</p>
+                </div> 
+                <hr>
+                <div class="flex gap-16 p-2">
+                    <p>Duration</p><p>3h</p>
+                </div> 
+                <hr>
+               <div class="flex gap-24 p-2">
+                <p>Visit</p><p>link:</p>
+               </div>
+              
+            </div>
+           </div>
+          </div>
+          <div class="lg:flex sm:block gap-28  bg-gradient-to-r from-cyan-500 to-blue-500 mb-12">
+            <div class="p-12">
+                <img src="https://dummyimage.com/300x200" alt="">
+            </div>
+           <div class="lg:p-8 sm:px-8 text-white" >
+            <div class="sm:pt-4 ">
+                <h2 class="px-2 pb-2">TPI CPC Solo Fast Programming Contest - 01</h2>
+                <hr>
+                <div class="flex  gap-24 p-2">
+                    <p>Date</p> <p>07-01-2023</p>
+                </div>
+                <hr>
+                <div class="flex gap-24 p-2">
+                    <p>Time</p><p>8:00PM</p>
+                </div> 
+                <hr>
+                <div class="flex gap-16 p-2">
+                    <p>Duration</p><p>3h</p>
+                </div> 
+                <hr>
+               <div class="flex gap-24 p-2">
+                <p>Visit</p><p>link:</p>
+               </div>
+              
+            </div>
+           </div>
+          </div>
+          <div class="lg:flex sm:block gap-28  bg-gradient-to-r from-cyan-500 to-blue-500 mb-12">
+           <div class="p-12">
+            <img src="https://dummyimage.com/300x200" alt="">
+           </div>
+           <div class="lg:p-8 sm:px-8 text-white">
+            <div class="sm:pt-4 ">
+                <h2 class="px-2 pb-2">TPI CPC Solo Fast Programming Contest - 01</h2>
+                <hr>
+                <div class="flex gap-24 p-2">
+                    <p>Date</p> <p>07-01-2023</p>
+                </div>
+                <hr>
+                <div class="flex gap-24 p-2">
+                    <p>Time</p><p>8:00PM</p>
+                </div> 
+                <hr>
+                <div class="flex gap-16 p-2">
+                    <p>Duration</p><p>3h</p>
+                </div> 
+                <hr>
+               <div class="flex gap-24 p-2">
+                <p>Visit</p><p>link:</p>
+               </div>
+              
+            </div>
+           </div>
+          </div>
+        </div>
+    </section>
+    <footer>
+        <p class="text-center py-8 bg-slate-800 text-slate-200"> copyright &copy;TPI Computer Club</p>
+    </footer>
+</body>
+</html>

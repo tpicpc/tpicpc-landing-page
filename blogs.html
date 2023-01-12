@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TPI - Computer Programming Club</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO meta tag here -->
+    <meta name="description"
+        content="Join TPI - Computer Programming Club to learn and explore the world of coding. Our experienced instructors will guide you through the fundamentals of programming languages such as Java, Python, and C++. Whether you're a beginner looking to get started or a seasoned programmer looking to expand your skillset, our club has something for everyone. With hands-on projects, hackathons, and workshops, you'll have the opportunity to put your skills to the test and develop your knowledge in a collaborative and supportive environment. Join us today and take your programming skills to the next level!">
+    <meta name="keywords"
+        content="TPI,TPICPC,Computer Programming Club,Programming Club,Programming,Java,Python,C++,Coding,Learn,Explore,Instructors,Workshops,Hackathons,Projects,Hands-on,Skills,Knowledge,Supportive Environment,Join,Next Level">
+    <meta name="author" content="TPI - Computer Programming Club">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="google" content="nositelinkssearchbox">
+    <meta name="google" content="notranslate">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font-awesome cdn -- =-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Ion icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Tailwind config here -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            // content: [
+            //   "./pages/**/*.{js,ts,jsx,tsx}",
+            //   "./components/**/*.{js,ts,jsx,tsx}",
+            // ],
+            theme: {
+                screens: {
+                    sm: "375px",
+                    md: "768px",
+                    lg: "1024px",
+                    xl: "1440px",
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: "1rem",
+                        lg: "3rem",
+                    },
+                },
+                extend: {
+                    colors: {
+                        primary: "#4a83c4",
+                        secondary: "#667085",
+                        cpcYellow: "#fbba31",
+                        cpcRed: "#b32a1c",
+                    },
+                    // backgroundImage: {
+                    //   'hero-img': "url('/Images/Container.svg')",
+                    // }
+                },
+            },
+            plugins: [],
+        };
+    </script>
+</head>
+
+<body>
+    <header class="bg-white">
+        <!-- navbar start -->
+        <nav class="container bg-white flex justify-between items-center">
+            <div>
+                <img class="w-20 cursor-pointer mt-3" src="images/tpicpclogo.png" alt="">
+            </div>
+
+            <div id="nav-links"
+                class="md:static absolute bg-white left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary decoration-2 font-bold" href="#">Team</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="#">Blogs</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="#">Events</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="#">Contact Us</a>
+                    </li>
+                    <li class="md:hidden lg:flex">
+                        <a target="_blank" href="https://github.com/tpicpc"><ion-icon name="logo-github"
+                                class="hover:text-secondary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.facebook.com/tpicpc"><ion-icon name="logo-facebook"
+                                class="hover:text-primary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.youtube.com/@tpicpc"><ion-icon name="logo-youtube"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/tpicpc"><ion-icon name="logo-instagram"
+                                class="hover:text-primary cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/tpicpc/"><ion-icon
+                                name="logo-linkedin"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="flex items-center gap-6">
+                <button
+                    class="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Register</button>
+                <ion-icon onclick="menuIcons(this)" name="menu"
+                    class="text-3xl cursor-pointer md:hidden hover:text-primary"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-------------start => Hero section ----------------->
+
+    <section id="hero">
+        <div class="container">
+            <div class="py-10 xl:w-3/6 md:w-4/6 sm:w-5/6">
+                <h4 class="xl:text-4xl md:text-3xl sm:text-xl font-bold text-cpcYellow">Thakurgaon Polytechnic Institute
+                </h4>
+                <h2 class="xl:text-6xl md:text-4xl sm:text-3xl my-4 font-bold ">Computer Programming Club</h2>
+                <p class="my-6 xl:text-xl md:text-lg sm:text-sm ">TPI CPC is the most primitive and extensive club as
+                    well as the biggest club in Thakurgaon Polytechnic Institute. We work together to explore every
+                    field of Computer Science .</p>
+                <button class="mt-8 bg-primary py-3 px-6  rounded text-white">Read More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-------------end => Hero section ----------------->
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img class="w-20 cursor-pointer " src="images/tpicpclogo.png" alt="">
+                <span class="ml-3 text-xl"></span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2023 TPICPC —
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@knyttneve</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                        stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+
+    <script>
+        // const navLinks = document.getElementById('nav-links');
+
+        function menuIcons(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+            navLinks.classList.toggle('top-[9%]');
+        }
+    </script>
+</body>
+
+
+</html>
