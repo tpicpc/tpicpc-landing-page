@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>events</title>
+    <title>Events | TPI - Computer Programming Club</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
@@ -58,39 +58,45 @@
 <body>
     <header class="bg-white">
         <!-- navbar start -->
-        <nav class="flex justify-between items-center w-[92%] mx-auto ">
-            <div>
-                <img class="w-20 cursor-pointer" src="images/tpicpclogo.png" alt="">
-            </div>
+        <nav class="container bg-white flex justify-between items-center">
+            <a href="index.html">
+                <img class="w-20 cursor-pointer mt-3" src="images/tpicpclogo.png" alt="">
+            </a>
 
-            <div id="navLinks" class="md:static absolute md:min-h-fit bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-5 duration-500">
+            <div id="nav-links"
+                class="md:static absolute bg-white left-0 top-[-100%] md:w-auto w-full flex items-center px-5">
                 <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-6">
                     <li>
-                        <a class="hover:text-secondary font-medium" href="index.html">Home</a>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="index.html">Home</a>
                     </li>
                     <li>
-                        <a class="hover:text-secondary font-medium" href="#">Team</a>
+                        <a class="hover:text-primary decoration-2 font-bold" href="#">Team</a>
                     </li>
                     <li>
-                        <a class="hover:text-secondary font-medium" href="#">Blogs</a>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="blogs.html">Blogs</a>
                     </li>
                     <li>
-                        <a class="hover:text-secondary font-medium" href="#">Events</a>
+                        <a class="hover:text-primary  decoration-2 font-bold" href="event.html">Events</a>
                     </li>
-                    <li>
-                        <a class="hover:text-secondary font-medium" href="#">Contact Us</a>
-                    </li>
-                    <li>
-                        <ion-icon name="logo-facebook" class="md:p-2 md:mt-3  p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
-                        <ion-icon name="logo-youtube" class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
-                        <ion-icon name="logo-instagram" class="md:p-2 p-0 md:text-2xl text-lg hover:text-primary cursor-pointer"></ion-icon>
-                        <ion-icon name="logo-linkedin" class="md:p-2 p-0 md:text-2xl text-lg hover:text-cpcRed cursor-pointer"></ion-icon>
+                    <li class="md:hidden lg:flex">
+                        <a target="_blank" href="https://github.com/tpicpc"><ion-icon name="logo-github"
+                                class="hover:text-secondary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.facebook.com/tpicpc"><ion-icon name="logo-facebook"
+                                class="hover:text-primary cursor-pointer md:px-2 text-2xl mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.youtube.com/@tpicpc"><ion-icon name="logo-youtube"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2 "></ion-icon></a>
+                        <a target="_blank" href="https://www.instagram.com/tpicpc"><ion-icon name="logo-instagram"
+                                class="hover:text-primary cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
+                        <a target="_blank" href="https://www.linkedin.com/company/tpicpc/"><ion-icon
+                                name="logo-linkedin"
+                                class="hover:text-cpcRed cursor-pointer text-2xl md:px-2 mt-2"></ion-icon></a>
                     </li>
                 </ul>
+
             </div>
             <div class="flex items-center gap-6">
-                <button
-                    class="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Register</button>
+                <a href="https://forms.gle/eYDGgffwRXBK8SJA7" target="_blank"
+                    class="hidden md:flex bg-primary text-white px-5 py-2 rounded-full hover:bg-secondary">Register</a>
                 <ion-icon onclick="menuIcons(this)" name="menu"
                     class="text-3xl cursor-pointer md:hidden hover:text-primary"></ion-icon>
             </div>
